@@ -1,5 +1,5 @@
-import { writable } from "svelte/store";
+import { writable } from 'svelte/store';
 
-const nameToSearch = writable("");
+const nameToSearch = writable('');
 
-export { nameToSearch }
+export { nameToSearch };

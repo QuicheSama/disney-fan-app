@@ -6,7 +6,7 @@
 	export let data: PageData;
 
 	const query = createQuery({
-		queryKey: ["character", data.id],
+		queryKey: ['character', data.id],
 		queryFn: async () => (await fetch(`https://api.disneyapi.dev/character/${data.id}`)).json()
 	});
 </script>
@@ -30,8 +30,8 @@
 </div>
 
 <style>
-    .container {
-        display: flex;
-        justify-content: center;
-    }
+	.container {
+		display: flex;
+		justify-content: center;
+	}
 </style>

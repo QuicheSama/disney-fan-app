@@ -19,15 +19,15 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-        justify-content: space-between;
-        background-color: white;
+		justify-content: space-between;
+		background-color: white;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
 
 	.header-content {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
 		flex-grow: 1;
 	}
 </style>

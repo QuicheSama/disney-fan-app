@@ -1,18 +1,32 @@
-# create-svelte
+# Unoffical Disney Fan App
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+For educational use only. All characters and content are the property of Disney. This test is for private use and development testing only and should not be distributed for public consumption.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Running locally
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# clone the repo
+git clone https://github.com/QuicheSama/disney-fan-app.git
 
-# create a new project in my-app
-npm create svelte@latest my-app
+
+# navigate to the folder and install dependencies
+cd disney-fan-app
+npm install
+
+# start the app in development mode.
+npm run dev
 ```
+
+## Routes
+
+| status | route            | detail                                                                                       |
+| ------ | ---------------- | -------------------------------------------------------------------------------------------- |
+| ✅     | `/`              | Default and featured characters are presented. User may search for characters via the header |
+| ✅     | `/character/:id` | View a specific character's details.                                                         |
+| 🚧     | `/profile`       | Began stubbing out inputs but ran outta steam.                                               |
+
+- ✅ = completed other than styling adjustments.
+- 🚧 = under construction/incomplete.
 
 ## Developing
 

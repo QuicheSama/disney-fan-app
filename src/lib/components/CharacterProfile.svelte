@@ -28,78 +28,77 @@
 			{/each}
 		</ul>
 		<h2>TV Shows</h2>
-        <ul>
-            {#each shows || [] as show (show)}
-            <li>{show}</li>
-        {/each}
-        </ul>
-           
+		<ul>
+			{#each shows || [] as show (show)}
+				<li>{show}</li>
+			{/each}
+		</ul>
+
 		<ul></ul>
 		<button on:click={() => location.assign(infoUrl)}>Explore More Character Details </button>
 	</div>
 </div>
 
 <style>
-    h1 {
-        font-size: 2rem;
-        padding: 0;
-        margin:0;
-        padding-bottom:2rem;
-    }
-    h2 {
-        font-size: 1rem;
-        padding: 0;
-        margin:0;
+	h1 {
+		font-size: 2rem;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 2rem;
+	}
+	h2 {
+		font-size: 1rem;
+		padding: 0;
+		margin: 0;
+	}
+	h3 {
+		font-size: 0.9rem;
+		padding: 0;
+		padding-bottom: 1rem;
+		margin: 0;
+	}
 
-    }
-    h3 {
-        font-size: 0.9rem;
-        padding: 0;
-        padding-bottom: 1rem;
-        margin:0;
-    }
+	ul {
+		font-size: 0.7rem;
+		padding-top: 0;
+		margin: 0;
+		padding-bottom: 1rem;
+	}
 
-    ul {
-        font-size: 0.7rem;
-        padding-top: 0;
-        margin:0;
-        padding-bottom: 1rem;
-    }
-
-    button {
-        color: #F1F2F3;
-        background-color: #054553;
-        box-shadow: 0px 4px 4px 0px #0545533D;
-        height: 2.5rem;
-        border-radius: 0.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
+	button {
+		color: #f1f2f3;
+		background-color: #054553;
+		box-shadow: 0px 4px 4px 0px #0545533d;
+		height: 2.5rem;
+		border-radius: 0.5rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
 
 	.container {
 		display: flex;
 		flex-direction: row;
-        background: #F1F2F3;
-        padding: 2rem;
+		background: #f1f2f3;
+		padding: 2rem;
 	}
 
-    .image-container {
-        width: 21rem;
-        height: 24rem;
-    }
+	.image-container {
+		width: 21rem;
+		height: 24rem;
+	}
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0.5rem;
-        box-shadow: 0px 4px 24px 0px #0545531F;
-    }
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0.5rem;
+		box-shadow: 0px 4px 24px 0px #0545531f;
+	}
 
 	.details {
 		flex-direction: column;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        color: #222222;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		color: #222222;
 	}
 </style>
