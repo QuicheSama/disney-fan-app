@@ -1,5 +1,4 @@
 <div>
-    <slot name="addon"></slot>
 	<slot></slot>
 </div>
 

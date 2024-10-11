@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { LayoutData } from './$types';
     import { QueryClientProvider } from '@tanstack/svelte-query';	
-
+    import { page } from '$app/stores'; 
     import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
 	import FeaturedCharacters from '$lib/components/FeaturedCharacters.svelte';
@@ -16,9 +16,10 @@
             <slot></slot>
         </div>
         <Footer>
-            <div>
+            <!-- TODO: find a way to do this through embedded layouts -->
+            {#if $page.url.pathname !== '/profile'}
                 <FeaturedCharacters/>
-            </div>
+            {/if}
             <div>For educational use only. All characters and content are the property of Disney. This test is for private use and development testing only and should not be distributed for public consumption</div>
         </Footer>
 	</div>

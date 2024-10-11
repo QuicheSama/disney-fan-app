@@ -1,18 +1,14 @@
 import { z } from "zod";
 
+// NOTE: truncated list of fields since these are the only ones used.
 const characterDataSchema = z.object({
     _id: z.number(),
-    url: z.string().optional(),
     name: z.string(),
     sourceUrl: z.string().optional(),
     films: z.array(z.string()).optional(),
     shortFilms: z.array(z.string()).optional(),
     tvShows:z.array(z.string()).optional(),
-    videoGames: z.array(z.string()).optional(),
-    alignment: z.string().optional(),
-    parkAttractions: z.array(z.string()).optional(),
-    allies: z.array(z.string()),
-    enemies: z.array(z.string()).optional()
+    imageUrl: z.string()
 });
 
 const characterResponseSchema = z.object({
