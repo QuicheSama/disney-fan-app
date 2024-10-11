@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-// NOTE: truncated list of fields since these are the only ones used.
+// NOTE: this is a truncated list of fields since these are the only ones used.
 const characterDataSchema = z.object({
     _id: z.number(),
     name: z.string(),
