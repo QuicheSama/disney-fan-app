@@ -6,7 +6,7 @@
 </script>
 
 <div class="card">
-    <div>
+    <div class='image-container'>
         <img src={imageUrl} alt={name}/>
     </div>
     <div class="details">
@@ -33,9 +33,16 @@ h2, h3 {
     height: 26rem;
 }
 
-img {
+.image-container {
+    background-color: white;
     width: 15.5rem;
     height: 15.5rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .details {
@@ -46,6 +53,7 @@ img {
     justify-content: space-between;
     padding: 0.5rem;
     font-size: 15px;
+    background-color: white;
 }
 
 .film-details {

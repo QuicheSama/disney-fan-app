@@ -10,7 +10,7 @@
 
 <style>
 	.circle {
-		background-color: blue;
+		background-color:#054553;
 		border-radius: 50%;
         width: 2rem;
         height: 2rem;

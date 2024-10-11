@@ -20,7 +20,7 @@ const defaultCharacterIds = [
     1947    //Donald Duck, 
   ];
 
-export const load = async () => {
+export const load = async ({fetch}) => {
 	const queryClient = new QueryClient({
 		defaultOptions: {
 			queries: {

@@ -11,7 +11,7 @@
         ($characterQueries) => $characterQueries.map(query => query)
     );
 
-    let responses:Array<CharacterResponse> = []
+    let responses:Array<CharacterResponse> = [];
     $: responses = $unwrappedQueries.map((query) => {
         const parsed = characterResponseSchema.safeParse(query.data);
         if(!parsed.success) {
@@ -41,7 +41,9 @@
 
 <style>
     h2 {
-        font-size: 2.25rem;
+        padding: 1rem;
+        margin: 0;
+        font-size: 2rem;
         color: white;
     }
     .container {
