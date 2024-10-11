@@ -68,7 +68,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
     .card-container {
         margin: 0.5rem;

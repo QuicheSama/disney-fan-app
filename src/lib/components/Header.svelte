@@ -21,6 +21,8 @@
 		align-items: center;
         justify-content: space-between;
         background-color: white;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	.header-content {

@@ -16,37 +16,44 @@
 </script>
 
 <QueryClientProvider client={data.queryClient}>
-	<div class="page">
-        <Header>
-            <a slot="logo" href="/">
-				<Logo />
-			</a>
-            <Search placeholder="Find a character..." store={nameToSearch}/>
-			<a slot="profile" href="/profile">
-				<UserAvatar />
-			</a>
-        </Header>
-        <div class="page-content">
-            <slot></slot>
-        </div>
-        <Footer>
-            <!-- TODO: find a way to do this through embedded layouts -->
-            {#if $page.url.pathname !== '/profile'}
-            <FeaturedCharacters slot="addon"/>
-            {/if}
-            <div class='footer-content'>
-                <Logo/>
-                <div>For educational use only. All characters and content are the property of Disney. This test is for private use and development testing only and should not be distributed for public consumption</div>
-    
+    <div class='container'>
+        <div class="page">
+            <Header>
+                <a slot="logo" href="/">
+                    <Logo />
+                </a>
+                <Search placeholder="Find a character..." store={nameToSearch}/>
+                <a slot="profile" href="/profile">
+                    <UserAvatar />
+                </a>
+            </Header>
+            <div class="page-content">
+                <slot></slot>
             </div>
-        </Footer>
-	</div>
+            <Footer>
+                <!-- TODO: find a way to do this through embedded layouts -->
+                {#if $page.url.pathname !== '/profile'}
+                <FeaturedCharacters slot="addon"/>
+                {/if}
+                <div class='footer-content'>
+                    <Logo/>
+                    <div>For educational use only. All characters and content are the property of Disney. This test is for private use and development testing only and should not be distributed for public consumption</div>
+        
+                </div>
+            </Footer>
+        </div>    
+    </div>
 </QueryClientProvider>
 
 <style>
+    .container {
+        display: flex;
+        justify-content: center;;
+    }
 	.page {
 		display: flex;
 		flex-direction: column;
+        width: 1200px
 	}
 
     .page-content {

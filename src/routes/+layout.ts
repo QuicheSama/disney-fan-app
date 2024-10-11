@@ -5,7 +5,7 @@ import { QueryClient } from '@tanstack/svelte-query';
 const defaultCharacterIds = [
     3347,   //Jafar
     3389,   //Jasmine
-    158,    //Aladdin
+    156,    //Aladdin
     25,     //Abu
     256,    //Anna
     2099,   //Elsa

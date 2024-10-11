@@ -1,16 +1,16 @@
-<div class="flex-column">
+<div class="container">
     <div class="flex-row">
         <label>
-            First Name
+            First Name<span>*</span>
             <input type="text" placeholder="First Name" required/>
         </label>
         <label>
-            Last Name
+            Last Name<span>*</span>
             <input type="text" placeholder="Last Name" required/>
         </label>
     </div>
     <label>
-        Birth Date
+        Birth Date<span>*</span>
         <input type="date" placeholder="01/01/1980" required/>
     </label>
 </div>
@@ -20,11 +20,21 @@
         display:block;
     }
 
-    .flex-column {
-        display: flex;
-        flex-direction: column;
+    span {
+        color: red;
     }
 
+    .container {
+        background-color: #F1F2F3;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    label {
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
+    }
     .flex-row {
         display: flex;
         flex-direction: row;
